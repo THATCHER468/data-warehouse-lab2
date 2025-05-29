@@ -1,0 +1,39 @@
+Data warehouse project OLTP + OLAP integration
+
+Objective 
+Simulate a real-world retail system by: 
+• Designing an OLTP schema (for daily operations) 
+• Building an OLAP star schema (for analytics) 
+• Performing ETL from OLTP → OLAP 
+• Running analytical queries to gain insights
+
+
+##Discussion Questions
+1. Why is the OLTP system normalized and the OLAP system denormalized?
+OLTP is normalized to reduce redundancy, improve data integrity, and support fast insert/update/delete operations.
+
+OLAP is denormalized to simplify complex queries and improve performance for read-heavy analytics and reporting tasks.
+
+2. What challenges would you face if you ran analytical queries directly on the OLTP system?
+Performance issues due to large scans and joins
+
+Locking problems that interfere with real-time transactions
+
+Complexity from having to join many normalized tables
+
+Risk of system crashes or delays in critical user-facing operations
+
+3. How can automation (e.g., scheduled ETL jobs) help in a real-world data pipeline?
+Keeps analytical data up-to-date automatically
+
+Reduces manual errors and improves consistency
+
+Enables real-time dashboards and business reports
+
+Frees engineers to focus on value-added tasks, not manual ETL
+
+##Collaborators
+1. Kevin Korir - 670656
+2. Margaret Amondi - 670497
+4. BriCole Asiachi - 670834 
+5. Alfred Gakinya - 671579
